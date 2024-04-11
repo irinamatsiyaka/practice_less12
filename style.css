@@ -1,0 +1,375 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.wrapper {
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+}
+
+.nav_bar { 
+    background: #111536;
+    flex: 0 0 72px;
+}
+
+.main { 
+    background: rgb(6, 6, 46); 
+    flex: 1 2 100%; 
+    min-width: 500px; 
+}
+
+.side_bar { 
+    background: #111536; 
+    flex: 0 0 368px;
+    min-width: 100px; 
+}
+
+.icons{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    gap: 25px;
+    color: #111536;
+}
+
+.icons i{ 
+    color: #898CAF; 
+    font-size: 24px; 
+}
+
+.icons i:hover{
+    color: white; 
+}
+
+
+.content{
+    display: flex;
+    flex-direction: column;
+    padding: 80px 80px 120px 83px;
+
+}
+.cBanner{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    height: 200px;
+    align-items: stretch;
+    overflow: hidden;
+}
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-basis: 50%;
+    padding-left: 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 2px solid #28007A;
+    border-right: none;
+    background: linear-gradient(162.34deg, #161A42 22.61%, rgba(22, 26, 66, 0) 118.29%);
+}
+
+.bannerTextInfo {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.bannerBtns {
+    display: flex;
+    gap: 10px;
+}
+
+.bannerBtns button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.bannerBtns button:first-child {
+    box-shadow: 6px 10px 16px 0px #5C5BF633;
+    background: #FA1F60;
+    color: white;
+}
+
+.bannerBtns button:last-child {
+    background-color: transparent;
+    color: white;
+    border: 2px solid #FFFFFF
+}
+
+.bannerImage {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.bannerImage img {
+    width: 350px;
+    height: 260px;
+    transform: scale(-1, 1);
+    object-fit: cover;
+}
+
+
+.userList{
+    display: flex;
+    flex-direction: row;
+    overflow-x:scroll;
+}
+.userList::-webkit-scrollbar{
+    border-radius: 20px;
+    height: 4px;
+}
+.userList::-webkit-scrollbar-track{
+    background: rgba(161, 157, 159, 0.23);
+}
+.userList::-webkit-scrollbar-thumb{
+    background: rgba(250, 31, 96, 1);
+}
+
+
+.friends{
+    margin-top: 33px;
+}
+
+.person{
+    margin: 20px 20px 10px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-basis: 200px;
+    align-items: center;
+    gap: 12px;
+    min-width:196px;
+}
+
+.person img{
+    height: 60px;
+    width: 60px;
+    object-fit:cover;
+    border-radius: 50%;
+}
+
+.nick{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.nick i{
+    color: white;
+}
+
+
+.projects{
+    margin-top: 33px;
+
+}
+
+.projectText{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.projectControls {
+    display: flex;
+    align-items: center; 
+    gap: 8px; 
+}
+
+
+.projectText i{
+    color:#A2A6D0;
+}
+
+.project{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    gap: 28px;
+    overflow-x:scroll;
+    overflow-y: hidden;
+}
+
+.cards{
+    width:264px;
+    height:284px;
+    background: #1B214F;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    position: relative;
+    padding: 12px 12px;
+}
+
+
+.card img:first-child{
+    width:240px;
+    height:164px;
+    border-radius: 20px;
+    display: block;
+}
+
+.card img:last-child{
+    width:40px;
+    height: 40px;
+    position: absolute;
+    top: 150px;
+    left: 200px;
+    border-radius: 100px;
+    border: 3px solid #1B214F;
+    object-fit:cover;
+}
+
+.cardText{
+    display: flex;
+    flex-direction: column;
+    padding-top: 17px;
+}
+
+.grade{
+    display: flex;
+    justify-content: space-between;
+    padding: 28px 0;
+    align-items: center;
+
+}
+
+.grade button{
+    background-color: transparent;
+    color: white;
+    border: 2px solid #FFFFFF;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 3px 40px;
+
+}
+
+.account{
+    margin: 35px 45px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.line{
+    margin: 0 35px 40px 35px;
+    border-bottom: 1px solid #C6C7CA33
+}
+
+.account img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.information{
+    display: flex;
+    flex-direction: column;
+    margin: 35px 0 20px 0;
+}
+
+.menu{
+    margin: 0 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menu i:first-child{
+    color: white;
+}
+
+.menu i:last-child{
+    color: white;
+}
+
+.information h5{
+    margin-top: 6px;
+}
+
+.i img{
+    margin: 40px 50px;
+    width: 263px;
+    height: 227px;
+    border-radius: 12px;
+}
+
+.infText{
+    margin: 20px 0 0 27px;
+}
+
+.cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 15px 0 40px 0;
+}
+
+.cont button{
+    background-color: transparent;
+    color: white;
+    border: 2px solid #FFFFFF;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 3px 40px;
+}
+
+.teacher{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.teacher img{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.butt{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+.butt button:last-child{
+        padding: 10px 70px;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        background: #FA1F60;
+        color: white;
+}
+
+ .bannerTextInfo p{
+    margin-top: 10px;
+ }
+
+p{
+    color:#A2A6D0;
+}
+
+h3{
+    color:white;
+}
+
+h4{
+    color: white;
+}
+h5{
+    color: gray;
+    line-height: 32px;
+    font-size: 12px;
+
+}
